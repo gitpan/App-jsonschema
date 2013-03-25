@@ -1,0 +1,15 @@
+Changelog for App-jsonschema
+
+0.01_01 2013-03-25T18:23:14
+ [André Santos <andrefs@cpan.org>]
+ - added more test cases (tests yet TODO)
+
+ - little improvement on documentation
+
+ - POD and cleaning for dzilla
+
+ - kickoff
+
+ - initial commit
+
+
