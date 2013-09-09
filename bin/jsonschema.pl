@@ -31,7 +31,7 @@ jsonschema.pl - Validate JSON files using JSON Schema
 
 =head1 VERSION
 
-version 0.01_01
+version 0.03
 
 =head1 SYNOPSIS
 

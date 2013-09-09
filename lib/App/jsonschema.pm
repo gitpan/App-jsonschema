@@ -2,7 +2,7 @@ use strict;
 use warnings;
 package App::jsonschema;
 {
-  $App::jsonschema::VERSION = '0.01_01';
+  $App::jsonschema::VERSION = '0.03';
 }
 use JSON::Schema;
 use JSON qw/from_json/;
@@ -39,6 +39,8 @@ sub _build_schema {
 	}
 	return $schema;
 }
+
+
 
 sub validate {
 	my ($self,@files) = @_;
@@ -84,7 +86,11 @@ App::jsonschema - Command-line utility to validate JSON using JSON Schema
 
 =head1 VERSION
 
-version 0.01_01
+version 0.03
+
+=head1 SYNOPSIS
+
+    jsonschema.pl schema.json file1.json [file2.json ...]
 
 =head1 DESCRIPTION
 
@@ -94,6 +100,10 @@ Schema. It is a simple command-line wrapper around L<JSON::Schema>.
 =head1 SEE ALSO
 
 L<JSON>, L<JSON::Schema>
+
+=head2 validate
+
+    Validates a set of JSON files passed as argument.
 
 =head1 AUTHOR
 
